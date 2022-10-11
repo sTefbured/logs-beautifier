@@ -63,7 +63,7 @@
             if (!logs) {
                 return;
             }
-            let isSkippingNonObjectBodyPart = parameterElementsMap[SKIP_NON_OBJECT_BODY_PART].checked;
+            let isSkippingNonObjectBodyPart = parameterElementsMap.get(SKIP_NON_OBJECT_BODY_PART).checked;
             let currentCharIndex = 0;
             let output = "";
             if (isSkippingNonObjectBodyPart) {
