@@ -150,6 +150,7 @@
         controlPanel.style.flexDirection = "column";
         parameterElementsMap.forEach(parameter => controlPanel.appendChild(parameter));
         controlPanel.appendChild(getResultButton);
+        return controlPanel;
     };
 
     const createWrapper = () => {
