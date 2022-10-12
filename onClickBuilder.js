@@ -43,7 +43,7 @@ export const createOnClick = (inputElement, outputElement, parameterElementsMap)
         if (!logs) {
             return;
         }
-        let isSkippingNonObjectBodyPart = parameterElementsMap.get(SKIP_NON_OBJECT_BODY_PART).checked;
+        let isSkippingNonObjectBodyPart = parameterElementsMap.get(SKIP_NON_OBJECT_BODY_PART).getCheckbox().checked;
         let [output, currentCharIndex] = checkAndSkipNonObjectPart(isSkippingNonObjectBodyPart, logs);
         let tabsCount = 0;
         let tabs = "";

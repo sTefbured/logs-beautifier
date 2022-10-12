@@ -24,6 +24,7 @@ import {SKIP_NON_OBJECT_BODY_PART} from "./constants.js";
         checkboxLabel.appendChild(checkbox);
         checkboxLabel.style.margin = "0 0 40px 0";
         checkboxLabel.style.cursor = "pointer";
+        checkboxLabel.getCheckbox = () => checkbox;
         return checkboxLabel;
     };
 
