@@ -1,3 +1,5 @@
+import {SKIP_NON_OBJECT_BODY_PART} from "./constants.js";
+
 const checkAndSkipNonObjectPart = (isSkipRequired, logs) => {
     let currentCharIndex = 0;
     let output = "";

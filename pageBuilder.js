@@ -1,7 +1,6 @@
 import {createOnClick} from "./onClickBuilder.js";
+import {SKIP_NON_OBJECT_BODY_PART} from "./constants.js";
 {
-    const SKIP_NON_OBJECT_BODY_PART = "Skip non-object-body part";
-
     const createTextAreaBlock = () => {
         let textAreaWrapper = document.createElement("div");
         let textAreaElement = document.createElement("textarea");

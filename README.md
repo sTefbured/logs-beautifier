@@ -44,6 +44,7 @@ javascript:
         }
     
         let beautifierScript = blankPage.document.createElement("script");
+        beautifierScript.type = "module";
         beautifierScript.src = "https://stefbured.github.io/logs-beautifier/pageBuilder.js";
         blankPage.document.body.appendChild(beautifierScript);
     

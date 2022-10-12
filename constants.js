@@ -1,0 +1,1 @@
+export const SKIP_NON_OBJECT_BODY_PART = "Skip non-object-body part";
