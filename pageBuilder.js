@@ -61,6 +61,7 @@ import {SKIP_NON_OBJECT_BODY_PART} from "./constants.js";
     };
 
     const createUI = () => {
+        console.log("Creating UI");
         let inputWrapper = createTextAreaBlock();
         let outputWrapper = createTextAreaBlock();
         let controlPanel = createControlPanel(inputWrapper.getTextArea(), outputWrapper.getTextArea());
@@ -70,6 +71,7 @@ import {SKIP_NON_OBJECT_BODY_PART} from "./constants.js";
         wrapper.appendChild(outputWrapper);
         document.body.appendChild(wrapper);
         document.title = "Logs beautifier";
+        console.log("UI is created");
     };
 
     createUI();
